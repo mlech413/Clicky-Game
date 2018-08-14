@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "name": "Bart",
+      "image":
+        "https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png"
+    },
+    {
+    "id": 2,
+    "name": "Homer",
+    "image":
+        "https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png"
+    },
+    {
+    "id": 3,
+    "name": "Marge",
+    "image":
+        "https://static.simpsonswiki.com/images/thumb/0/0b/Marge_Simpson.png/250px-Marge_Simpson.png"
+    },
+    {
+    "id": 4,
+    "name": "Lisa",
+    "image":
+        "https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Lisa_Simpson.png/220px-Lisa_Simpson.png"
+    },
+    {
+    "id": 5,
+    "name": "Maggie",
+    "image":
+        "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Maggie_Simpson.png/220px-Maggie_Simpson.png"
+    },
+    {
+    "id": 6,
+    "name": "Apu",
+    "image":
+        "https://upload.wikimedia.org/wikipedia/pt/7/7d/Apu_Nahasapeemapetilon.png"
+    },
+    {
+    "id": 7,
+    "name": "Mr. Burns",
+    "image":
+        "https://upload.wikimedia.org/wikipedia/bs/thumb/5/56/Mr_Burns.png/222px-Mr_Burns.png"
+    },
+    {
+    "id": 8,
+    "name": "Ned Flanders",
+    "image":
+        "https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Ned_Flanders.png/220px-Ned_Flanders.png"
+    },
+    {
+    "id": 9,
+    "name": "Millhouse",
+    "image":
+        "https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Milhouse.PNG/220px-Milhouse.PNG"
+    },
+    {
+    "id": 10,
+    "name": "Moe",
+    "image":
+        "https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Moe_Szyslak.png/220px-Moe_Szyslak.png"
+    },
+    {
+      "id": 11,
+      "name": "Krusty",
+      "image":
+        "https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Krustytheclown.png/220px-Krustytheclown.png"
+    },
+    {
+      "id": 12,
+      "name": "Grandpa",
+      "image":
+        "https://upload.wikimedia.org/wikipedia/en/3/3e/Abe_Simpson.png"
+    }
+  ]
+  
