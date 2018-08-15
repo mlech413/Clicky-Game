@@ -3,7 +3,7 @@ import "./DispMessage.css";
 
 const DispMessage = (props) => (
                     <div className="display-message">
-                        <h1><center>{props.msgText}</center></h1>
+                        <h1><center><strong>{props.finalMessage}</strong></center></h1>
                     </div>
 );
 

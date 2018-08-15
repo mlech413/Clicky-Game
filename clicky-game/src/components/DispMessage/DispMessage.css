@@ -1,3 +1,5 @@
 .display-message {
   color: red;
+  background: white;
+  opacity: 0.7;
 }

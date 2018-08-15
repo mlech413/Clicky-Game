@@ -8,7 +8,7 @@ import images from "../../imagelist.json";
 
 var prevSelectedImages =[];
 var prevSelectedImagesState =[];
-var msgText = "testing";
+var msgText = "";
 
 class Game extends React.Component {
   state = {
@@ -32,14 +32,14 @@ class Game extends React.Component {
   handleClick = (event) =>{
     let tempImages = [];
     let displayOrder = [];
-    // let tempImages = this.state.images;
     console.log("start this.state.images=")
     console.log(this.state.images);
-    console.log("start tempImages=")
-    console.log(tempImages);
+    // console.log("start tempImages=")
+    // console.log(tempImages);
     let imageSelected = event.target.getAttribute("value");
-    let nameSelected = event.target.getAttribute("name");
+    let nameSelected = event.target.getAttribute("charName");
     console.log("imageSelected=" + imageSelected);
+    console.log("nameSelected=" + nameSelected);
     let alreadySelected = false;
     for (let s = 0; s < prevSelectedImages.length; s++){
       if (prevSelectedImages[s] === imageSelected) {
@@ -78,11 +78,11 @@ class Game extends React.Component {
     }
     let newScore = 0;
     let newTopScore = 0;
-    let msgText = "";
+    msgText = "123";
     if (alreadySelected === true) {
       prevSelectedImages = [];
       newScore = 0;
-      msgText = nameSelected + " was clicked twice!"
+      msgText = nameSelected + " was clicked twice, you lose!"
       if (this.state.score > this.state.topScore) {
         newTopScore = this.state.score ;
       }
@@ -93,7 +93,12 @@ class Game extends React.Component {
     else {
       newScore = this.state.score + 1;
       msgText = "";
-    }
+    };
+    if (newScore >= 12) {
+      msgText = "*** CONGRATUATIONS, YOU WIN!!!!! ***"
+      prevSelectedImages = [];
+      newTopScore = this.state.score ;
+    };
 
     this.setState({ images: tempImages,
                     prevSelectedImagesState: tempSelectedArray,
@@ -111,12 +116,12 @@ class Game extends React.Component {
 
         <Middle score={this.state.score} topScore={this.state.topScore} />
 
-        <DispMessage msgText />
+        <DispMessage finalMessage={msgText} />
 
         {this.state.images.map(imageData => (
           <ImageCard 
             src={imageData.image}
-            alt={imageData.name}
+            name={imageData.name}
             id={imageData.id}
             key={imageData.id}
             handleClick={this.handleClick}

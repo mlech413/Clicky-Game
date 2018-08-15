@@ -4,7 +4,7 @@ import "./ImageCard.css";
 const ImageCard = props => (
     <button className="btn btn-primary" onClick={props.handleClick}>
         <div className="img-container">
-            <img alt={props.name} src={props.src} value={props.id}/>
+            <img alt={props.name} charName={props.name} src={props.src} value={props.id}/>
         </div>
     </button>
 );

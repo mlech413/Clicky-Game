@@ -6,12 +6,12 @@ const Middle = (props) => (
         <div className="row">
                 <div className="col-md-6">
                     <div className="middle">
-                        <h2>Click an image to begin!</h2>
+                        <h1>Click an image to begin!</h1>
                     </div>
                 </div>
                 <div className="col-md-6">
                     <div className="score">
-                        <h2>Score: {props.score} &nbsp; Top Score: {props.topScore}</h2>
+                        <h1>Score: {props.score} &nbsp; Top Score: {props.topScore}</h1>
                     </div>
                 </div>
         </div>
