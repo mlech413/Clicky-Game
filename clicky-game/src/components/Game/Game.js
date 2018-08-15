@@ -37,9 +37,11 @@ class Game extends React.Component {
     displayOrder[0] = randomNum;
     randomNum = Math.floor(Math.random() * 12);
     for (var x = 0; x < 11; x++) {
+      // loop through random array until you get a number that wasn't already chosen, so there are no duplicates
       for (var i = 0; i < 12; i++) {
         if (displayOrder[i] === randomNum) {
           randomNum = Math.floor(Math.random() * 12);
+          // after random number chosen, start over for the next random number
           if (displayOrder.length < 12) {
             i = -1;
           }
