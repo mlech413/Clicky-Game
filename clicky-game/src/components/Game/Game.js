@@ -18,38 +18,19 @@ class Game extends React.Component {
     prevSelectedImagesState
   };
 
-  // componentDidMount() {
-  //   console.log(this.state)
-  // };
-
-  handleIncrement = () => {
-    console.log("handleIncrement")
-    this.setState( { score: this.state.score + 1 } )
-  };
-
-  
-
   handleClick = (event) =>{
     let tempImages = [];
     let displayOrder = [];
-    console.log("start this.state.images=")
-    console.log(this.state.images);
-    // console.log("start tempImages=")
-    // console.log(tempImages);
     let imageSelected = event.target.getAttribute("value");
     let nameSelected = event.target.getAttribute("charName");
-    console.log("imageSelected=" + imageSelected);
-    console.log("nameSelected=" + nameSelected);
     let alreadySelected = false;
     for (let s = 0; s < prevSelectedImages.length; s++){
       if (prevSelectedImages[s] === imageSelected) {
         alreadySelected = true;
-        console.log("alreadySelected = true");
-      }
-      else {
-        console.log("alreadySelected = false");
-      }
+      };
     };
+    
+    // Logic for determining random reshuffle order
     let tempSelectedArray = prevSelectedImages;
     tempSelectedArray[tempSelectedArray.length] = imageSelected;
     let randomNum = Math.floor(Math.random() * 12);
@@ -68,9 +49,9 @@ class Game extends React.Component {
           }
         }
       };
+      // populate each new display number in array, for new random display order
       displayOrder[displayOrder.length] = randomNum;
     };
-    console.log("displayOrder=" + displayOrder);
     let displayIndex = 0;
     for (var d = 0; d < this.state.images.length; d++){
       displayIndex = displayOrder[d];
@@ -78,11 +59,12 @@ class Game extends React.Component {
     }
     let newScore = 0;
     let newTopScore = 0;
-    msgText = "123";
+
+    // Final logic for either losing the game, or else incrememnting counter
     if (alreadySelected === true) {
       prevSelectedImages = [];
       newScore = 0;
-      msgText = nameSelected + " was clicked twice, you lose!"
+      msgText ="😢 😬 😧 " + nameSelected + " was clicked twice, you lose! ☹️ 😲 😞"
       if (this.state.score > this.state.topScore) {
         newTopScore = this.state.score ;
       }
@@ -94,18 +76,18 @@ class Game extends React.Component {
       newScore = this.state.score + 1;
       msgText = "";
     };
+
+    // if user reaches 12 correct guesses, they win!!!
     if (newScore >= 12) {
-      msgText = "*** CONGRATUATIONS, YOU WIN!!!!! ***"
+      msgText = "😀 😃 😁 CONGRATUATIONS, YOU WIN!!!!! 😁 😃 😀"
       prevSelectedImages = [];
       newTopScore = this.state.score ;
     };
-
     this.setState({ images: tempImages,
                     prevSelectedImagesState: tempSelectedArray,
                     topScore: newTopScore,
                     score: newScore});
     tempImages = [];
-
   };
 
   render() {
@@ -132,7 +114,6 @@ class Game extends React.Component {
 
     );
   };
-
 };
 
 export default Game;
