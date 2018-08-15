@@ -15,7 +15,7 @@
     "id": 3,
     "name": "Marge",
     "image":
-        "https://static.simpsonswiki.com/images/thumb/0/0b/Marge_Simpson.png/250px-Marge_Simpson.png"
+        "https://upload.wikimedia.org/wikipedia/pt/thumb/0/0b/Marge_Simpson.png/150px-Marge_Simpson.png"
     },
     {
     "id": 4,
@@ -33,7 +33,7 @@
     "id": 6,
     "name": "Apu",
     "image":
-        "https://upload.wikimedia.org/wikipedia/pt/7/7d/Apu_Nahasapeemapetilon.png"
+        "https://vignette.wikia.nocookie.net/simpsons/images/7/7d/Apu_Nahasapeemapetilon.png/revision/latest?cb=20171027210822"
     },
     {
     "id": 7,
@@ -51,7 +51,7 @@
     "id": 9,
     "name": "Millhouse",
     "image":
-        "https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Milhouse.PNG/220px-Milhouse.PNG"
+        "https://s-media-cache-ak0.pinimg.com/originals/5e/ad/fb/5eadfb650086a6cc7a156290ff5bd08a.png"
     },
     {
     "id": 10,

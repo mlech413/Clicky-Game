@@ -4,22 +4,11 @@ import "./Title.css";
 // const Title = props => <h3 className="title">{props.children}</h3>;
 
 
-const Title = (props) => (
-    <div className="container">
-        <div className="row">
-                <div className="col-md-6">
-                    <div className="title">
-                        <h3>Click an image to begin!</h3>
-                    </div>
-                </div>
-                <div className="col-md-6">
-                    <div className="score">
-                        <h3>Score: {props.score} &nbsp; Top Score: {props.topScore}</h3>
-                    </div>
-                </div>
-        </div>
+const Title = () => (
+    <div className="title">
+        <h1><strong>The Simpsons</strong></h1>
+        <h3><i>Click on an image to earn points, but don't click on any more than once!</i></h3> 
     </div>
-    
 );
 
 export default Title;

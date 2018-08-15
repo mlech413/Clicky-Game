@@ -1,12 +1,13 @@
 .wrapper {
-    padding-top: 50px;
+    /* padding-top: 50px; */
     background: url("https://www.slashfilm.com/wp/wp-content/images/simpsons-house-hd.jpg");
     background-size: cover;
-    height: 100%;
-    display: flex;
+    /* background-size: auto; */
+    /* height: 100%; */
+    /* display: flex; */
     flex-flow: row wrap;
     padding: 20px;
     justify-content: space-around;
     align-content: flex-start;
-    overflow: auto;
+    /* overflow: auto; */
   }
