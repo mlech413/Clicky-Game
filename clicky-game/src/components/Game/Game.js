@@ -83,7 +83,8 @@ class Game extends React.Component {
     if (newScore >= 12) {
       msgText = "😀 😃 😁 CONGRATUATIONS, YOU WIN!!!!! 😁 😃 😀"
       prevSelectedImages = [];
-      newTopScore = this.state.score ;
+      newTopScore = 12;
+      newScore = 0;
     };
     this.setState({ images: tempImages,
                     prevSelectedImagesState: tempSelectedArray,
