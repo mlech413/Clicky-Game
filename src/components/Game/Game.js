@@ -76,6 +76,7 @@ class Game extends React.Component {
     }
     else {
       newScore = this.state.score + 1;
+      newTopScore = this.state.topScore
       msgText = "";
     };
 
